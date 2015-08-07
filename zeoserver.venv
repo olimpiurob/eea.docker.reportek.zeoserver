@@ -1,0 +1,6 @@
+# [buildout]
+INDEX=http://eggrepo.apps.eea.europa.eu/pypi/
+FIND_LINKS=http://eggshop.eaudeweb.ro http://eggrepo.apps.eea.europa.eu/simple http://dist.plone.org/thirdparty/ http://pypi.python.org/pypi
+
+# [zeoserver]
+BUILDOUT_EGGS=ZopeUndo
