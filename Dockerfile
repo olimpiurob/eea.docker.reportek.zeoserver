@@ -16,11 +16,11 @@ RUN yum -y updateinfo && yum -y install \
     yum clean all && \
     mkdir -p $ZEO_HOME
 
-COPY base.cfg                            $ZEO_HOME/base.cfg
-COPY zope-2.13.23-versions.cfg           $ZEO_HOME/zope-2.13.23-versions.cfg
-COPY bootstrap.py                        $ZEO_HOME/
-COPY start.sh                            /usr/bin/start
-COPY configure.py                        /configure.py
+COPY src/base.cfg                            $ZEO_HOME/base.cfg
+COPY src/versions.cfg                        $ZEO_HOME/versions.cfg
+COPY src/bootstrap.py                        $ZEO_HOME/
+COPY src/start.sh                            /usr/bin/start
+COPY src/configure.py                        /configure.py
 
 WORKDIR $ZEO_HOME
 
